@@ -1,12 +1,12 @@
-Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score.
-You are given scores. Store them in a list and find the score of the runner-up.
-Sample Input 0
+''' Sample Input 0
 
 5
 2 3 6 6 5
 Sample Output 0
 
-5
+5 '''
+
+''' Method 1 using sort function '''
 
 if __name__ == '__main__':
     n = int(input())
@@ -18,7 +18,8 @@ for i in range(n,0,-1):
         print(arr_1[i-2])
         break
 
-OR
+''' Method 2 without sorting '''
+
 if __name__ == '__main__':
     n = int(input())
     arr = map(int, input().split())
